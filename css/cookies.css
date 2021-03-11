@@ -1,0 +1,62 @@
+/*color selccion con el cursor*/
+
+    /*color en el cuerpo del texto*/
+.selection-cookies-title::selection {
+    background-color: #c4f7e358;
+    color: #9d3312d4;
+}
+
+.selection-cookies-title {
+    text-align: center;
+}
+    /*color en el cuerpo del texto*/
+.selection-cookies-cuerpo::selection {
+    background-color: #c4f7e358;
+    color: #6f129d;
+}
+
+/*barra de cookies*/
+#cajacookies {
+    box-shadow: 5px 0px 5px 5px #808080;
+    background-color: #2b6a64e6;
+    color: #fff;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+#cajacookies a {
+    color: #7fff00;
+}
+#cajacookies p {
+    margin-bottom: 5px;
+}
+
+.button-cookies {
+    background-color: #5f8496;
+    border-color: #cfcfcf;
+    padding: 8px 50px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/*politica.html (estilo de la pajina de politica de cookies)*/
+.sumari-container {
+    width: 50%;
+    margin: 4% 25%;
+}
+
+.sumari-container article h3{
+    border-bottom: 2px dashed #000
+}
+.sumari-container article> p {
+    margin-left: 10%;
+}
+
+.sumari-container article li {
+    margin-left: 12%;
+}

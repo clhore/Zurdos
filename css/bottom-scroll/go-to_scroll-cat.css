@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:803px) {
+/* Bottom go-top (aspecto del boton)*/
+    #go-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        background-color: rgb(138, 138, 138);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+ /* cuando el cursor pase por encima */     
+    #go-top:hover {
+        background-color: #555;
+    }
+/* Bottom scroll-categorias (se le dice que si la pantalla es más grande 803px, no aparezca) */
+    #scroll-categorias {
+        display: none !important;
+    }
+
+/* Sub Menu de scroll-categorias (se le dice que si la pantalla es más grande 803px, no aparezca) */
+    .menusimple-selccion-scroll {
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 802px){
+/* Bottom scroll-categorias (aspecto del boton, cuando cuando la pantalla sea mas pequema de 802px) */
+    #scroll-categorias {
+        display: none;
+        position: fixed;
+        bottom: 15px;
+        right: 10px;
+        z-index: 99;
+        padding: 10px 15px;
+        background-color: #81c784c4;
+        border-radius: 10px;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+    .menusimple-selccion-scroll { 
+        position: fixed;
+        list-style: none;
+        bottom: 3.6em;
+        right: 1em;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.75s;
+    }
+
+    #scroll-categorias:hover .menusimple-selccion-scroll{
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .menusimple-selccion-scroll li {
+        width: fit-content;
+        padding: 5px 0;
+        margin: 5px;
+        background-color: #90ded7;
+        border-radius: 100px;
+    }
+
+    .menusimple-selccion-scroll li a {
+        color: #fff;
+        font-size: 22px;
+        padding: 0px 15px;
+    }
+
+    .menusimple-selccion-scroll li a i {
+        color: #b51249b3;
+    }
+}

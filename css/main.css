@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menusimple li {
+    padding: 4px 40px;
+    display: inline-block;
+}
+
+.menusimple li a {
+    font-size: 20px;
+    color: #fff
+}
+
+.box-contenedor {
+    padding: 4rem 0rem 4rem;
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.titulo-box {
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px solid #4ca550;
+    padding-bottom: 4px;
+    /* border-radius: 3px; */
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+.content-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 30%;
+    text-align: center;
+    height: 280px;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);
+    transition: transform 0.6s;
+}
+
+.box:hover {
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
+    transform: scale(1.03);
+}
+
+
+.far {
+    font-family: "Font Awesome 5 Free";
+}
+
+.box i {
+    margin: 20px 0px;
+    font-size: 40px;
+    color: #ff9c78e6 
+}
+
+.box h3 {
+    margin-bottom: 8px;
+}
+
+.box p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta {
+    padding: 5px;
+    background: #ff9a9e;
+    color: #000;
+    border-radius: 8px;
+    font-family: initial;
+}
+
+.cta:hover {
+    box-shadow: 0 0 6px 0 rgb(109 0 128 / 50%);
+    cursor: pointer;
+}
+
+/* Hero */
+
+.h2-separador {
+    padding: 180px 0px 160px;
+    background: #aa83ef;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+}
+
+.separador-hero {
+    fill: #aa83ef;
+}
+
+/* Separador famosos zurdos */
+
+.contenedor {
+    text-align: center;
+    background: #f5576c;
+    color: #fff;
+    padding: 20px 0px;
+    margin-bottom: 0;
+}
+
+/* Cars famosos zurdos */
+
+.cars-contenedor {
+    padding: 2rem 0rem 4rem;
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.titulo-famosos {
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px solid #4ca550;
+    padding-bottom: 4px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px
+}
+
+.content-cars {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cars {
+    width: 45%;
+    text-align: center;
+    margin: 0px 14px 14px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);
+    transition: transform 0.6s;
+}
+
+.cars img {
+    width: 120px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cars i {
+    font-size: 20px;
+    color: #f1dda1;
+}
+
+.cars p {
+    font-size: medium;
+    padding: 10px 60px;
+}
+
+@media screen and (max-width:800px){
+    .textos-hero h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    /* estilos generales */
+    .titulo{
+        font-size: 35px;
+    }
+
+    .titulo.left{
+        text-align: center;
+    }
+
+    .info p{
+        text-align: center;
+    }
+
+    /* section */
+    .website{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img{
+        width: 100%;
+    }
+
+    .website .contenedor-textos-main{
+        width: 100%;
+    }
+
+    /* Cards */
+
+    .box-contenedor {
+        padding: 4rem 0px 4rem;
+        width: 90%;
+        max-width: 800px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .box{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .titulo,
+    .textos-hero h1{
+        font-size: 30px;
+    }
+
+    .textos-hero p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .box-contenedor {
+        padding: 4rem 0px 4rem;
+        width: 90%;
+        max-width: 800px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .box{
+        height: 380px;
+    }
+
+    .website .contenedor-textos-main{
+        margin-bottom: 30px;
+    }
+
+    .galeria-cont>img{
+        width: 97%;
+    }
+}
